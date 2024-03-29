@@ -1,0 +1,8 @@
+resilience4j.circuitbreaker:
+  instances:
+    payForOrder:
+      failureRateThreshold: 50
+      ringBufferSizeInClosedState: 5
+      ringBufferSizeInHalfOpenState: 2
+      waitDurationInOpenState: 60s
+      automaticTransitionFromOpenToHalfOpenEnabled: true
