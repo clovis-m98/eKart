@@ -24,6 +24,6 @@ public class CustomerDTO {
 	@Size(max=10, min = 10, message = "{customer.invalid.phoneNumber}")
 	@Pattern(regexp = "[0-9]+", message = "{customer.invalid.phoneNumber}")
 	private String phoneNumber;
-	@NotNull(message = "{customer.address.absent}")
+//	@NotNull(message = "{customer.address.absent}")
 	private String address;
 }
